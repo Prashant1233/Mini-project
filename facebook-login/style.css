@@ -139,7 +139,7 @@ input:focus {
     padding:20px;
     background-color: white;
     position: relative;
-    margin-left: 250px;
+    margin:auto;
 }
 .language {
     display:flex;
