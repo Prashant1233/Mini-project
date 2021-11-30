@@ -1,33 +1,33 @@
 const quiz=[{
-    Q: "Q. What is the tech stack used for this project ?",
+    Q: "1. What is the tech stack used for this project ?",
     opt1: "HTML",
     opt2: "CSS",
     opt3: "JavaScript",
     opt4: "All",
     ans: "ans4",
 }, {
-    Q: "Q. who is the founder of JavaScript?",
+    Q: "2. who is the founder of JavaScript?",
     opt1: "Brendan Eich",
     opt2: "Lily Cooper",
     opt3: "Grahm Bell",
     opt4: "None",
     ans: "ans1",
 }, {
-    Q: "Q. what is the full form of css?",
+    Q: "3. what is the full form of CSS?",
     opt1: "Casting Style Sheet",
     opt2: "Costume Style Sheet",
     opt3: "Cascading Style Sheet",
     opt4: "None",
     ans: "ans3",
 }, {
-    Q: "Q. What is the full form of HTTP",
+    Q: "4. What is the full form of HTTP",
     opt1: "Height Transfer Protocol",
     opt2: "Hypertext Transfer Protocol",
     opt3: "Hybrid Transfer protocol",
     opt4: "None",
     ans: "ans2",
 }, {
-    Q: "Q. What stands for URL",
+    Q: "5. What stands for URL",
     opt1: "Unique Resource Locator",
     opt2: "Uniform Resource Locator",
     opt3: "Undefined Resource Locator",
@@ -35,14 +35,10 @@ const quiz=[{
     ans: "ans2",
 }]
 
+const ques=document.querySelector(".main-div");
+const show=document.querySelector("#show");
  
 let count = 0, score = 0;
-function prev(){
-    if(count>0){
-      count--;
-    }
-setQues()
-}
 function setQues(){
 const heading = document.querySelector(".heading").innerText = quiz[count].Q;
 const opt1 = document.querySelector(".opt1").innerText = quiz[count].opt1;
@@ -69,16 +65,25 @@ btn.addEventListener('click', ()=>{
     if(quiz[count].ans==inputid){
            score++;
     }
-    if(count < quiz.length-1){
-    count++;
-    }
     
-    if(count==quiz.length){
-        const show= document.querySelector(".show").innerHTML=`
-        <h4> your score ${score}/${quiz.length}`        
+    const resetCheck=()=>{
+        rightAns.forEach((current)=>{
+            current.checked=false;   
+    })
+}
+resetCheck();
+count++;
+    if(count<quiz.length){
+    setQues();
+    }
+    else{
+        show.innerHTML=
+        `<div class="showscore"><h2> your score is ${score}/${quiz.length}</h2> 
+        <button class="btn" onClick="location.reload()">Start again</button>
+        </div>`;
+    show.classList.remove('score');
     }
        
-    setQues();
  
 })
 
