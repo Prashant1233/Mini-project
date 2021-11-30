@@ -24,7 +24,7 @@
 .container {
     height:60vh;
     width:40vw;
-    /* display:flex; */
+    display:flex;
     align-items:center;
     justify-content: center;
     flex-flow: column;
