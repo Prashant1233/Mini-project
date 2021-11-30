@@ -2,39 +2,44 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+    font-family: 'Comforter', cursive;
 }
 .main-div {
     height:100vh;
     width:100vw;
+    background-image: url("https://media.istockphoto.com/photos/innovation-and-new-ideas-lightbulb-concept-with-question-mark-picture-id1279690557?b=1&k=20&m=1279690557&s=170667a&w=0&h=BnH7EPIgwwpPyKMfeBJr87Ql900NFKjLYknrzvfi3Dw=");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .front-end {
     height:80px;
     width:100vw;
-    background-color: rgb(216, 118, 132);
+    background-color: rgba(11, 44, 75, 0.795);
     display:flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    color:blueviolet;
+    color:white;
 }
 .container {
     height:60vh;
     width:40vw;
-    display:flex;
+    /* display:flex; */
     align-items:center;
     justify-content: center;
     flex-flow: column;
-    background-color: aliceblue;
+    background-color: rgba(255, 255, 255, 0.582);
     margin:50px 420px;
-    box-shadow: 1px 1px 1px 1px rgb(226, 191, 191);
     border-radius: 1vw;
 }
 .heading {
     font-size:1.5rem;
-    color:darkgreen;
+    color:rgba(11, 44, 75, 0.966);
+    margin-top:30px;
     width:40vw;
     padding:15px;
     border-radius:1vw;
+    cursor:default;
 }
 .question ul {
     list-style: none;
@@ -44,29 +49,47 @@
 .question ul li{
     font-size: 1.5rem;
     padding:1rem;
-    color:tomato;
+    color:rgba(11, 44, 75, 0.966);
     width:40vw;
     }
 input{
     cursor: pointer;
 }
 button {
-    justify-content:space-between;
-    width:19vw;
-    height:6vh;
-    background-color: rgb(143, 197, 231);
+    position:relative;
+    width:40vw;
+    height:10vh;
+    background-color:rgb(29, 29, 29);
     font-size: 1.5rem;
-    border-radius: 1vw;
-    color:rgb(255, 0, 221);
+    color:yellow;
+    margin-top:30px;
     cursor:pointer;
     border: 1px solid rgba(0, 0, 0, 0.24);
 }
 button:hover {
-    background-color:white;
-    color:lightskyblue;
+    /* background-color:white; */
+    color:white;
 }
 button:focus {
     outline: none;
+    background-color: green;
 }
-    
-
+.show {
+    display:flex;
+    justify-content: center;
+    margin-top: 300px;  
+    text-align: center;
+    }
+.showscore {
+    display:grid;
+    place-items:center;
+    font-size: 1.5rem;
+    width:30vw;
+    height: 15vh;
+    background-color: darkblue;
+    color:white;
+    text-align: center;
+    }
+    #show{
+        display: none;
+    }   
