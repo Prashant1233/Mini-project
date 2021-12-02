@@ -35,8 +35,8 @@ const quiz=[{
     ans: "ans2",
 }]
 
-const ques=document.querySelector(".main-div");
-const show=document.querySelector("#show");
+const ques=document.getElementById("container");
+const show=document.querySelector(".show");
  
 let count = 0, score = 0;
 function setQues(){
@@ -77,16 +77,11 @@ count++;
     setQues();
     }
     else{
+        // console.log("show");
         show.innerHTML=
-        `<div class="showscore"><h2> your score is ${score}/${quiz.length}</h2> 
-        <button class="btn" onClick="location.reload()">Start again</button>
+        `<div class="showscore"><h2> Your score is ${score}/${quiz.length}</h2> 
+        <button class="btn" id="final" onClick="location.reload()">Start Again</button>
         </div>`;
-    show.classList.remove('score');
+    ques.classList=('forshow');
     }
-       
- 
 })
-
-    
-
-
