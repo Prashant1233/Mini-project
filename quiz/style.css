@@ -88,8 +88,9 @@ button:focus {
     width:40vw;
     height: 33vh;
     background-color: skyblue;
-    color:white;
+    color:darkblue;
     text-align: center;
+    border-radius: 1vw;
     }
   
     .forshow{
@@ -99,4 +100,5 @@ button:focus {
         background-color: brown;
         width:20vw;
         border-radius: 1vw;
+        box-shadow: 1px 1px 1px 1px white;
     }
