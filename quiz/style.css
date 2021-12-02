@@ -4,13 +4,15 @@
     box-sizing: border-box;
     font-family: 'Comforter', cursive;
 }
-.main-div {
-    height:100vh;
-    width:100vw;
+body{
     background-image: url("https://media.istockphoto.com/photos/innovation-and-new-ideas-lightbulb-concept-with-question-mark-picture-id1279690557?b=1&k=20&m=1279690557&s=170667a&w=0&h=BnH7EPIgwwpPyKMfeBJr87Ql900NFKjLYknrzvfi3Dw=");
     background-repeat: no-repeat;
     background-size: cover;
 }
+.main-div {
+    height:100vh;
+    width:100vw;
+    }
 .front-end {
     height:80px;
     width:100vw;
@@ -21,10 +23,9 @@
     font-size: 30px;
     color:white;
 }
-.container {
+#container {
     height:60vh;
     width:40vw;
-    display:flex;
     align-items:center;
     justify-content: center;
     flex-flow: column;
@@ -55,7 +56,7 @@
 input{
     cursor: pointer;
 }
-button {
+.btn {
     position:relative;
     width:40vw;
     height:10vh;
@@ -77,19 +78,25 @@ button:focus {
 .show {
     display:flex;
     justify-content: center;
-    margin-top: 300px;  
+    margin-top: 200px;  
     text-align: center;
     }
 .showscore {
     display:grid;
     place-items:center;
     font-size: 1.5rem;
-    width:30vw;
-    height: 15vh;
-    background-color: darkblue;
+    width:40vw;
+    height: 33vh;
+    background-color: skyblue;
     color:white;
     text-align: center;
     }
-    #show{
+  
+    .forshow{
         display: none;
-    }   
+    }
+    #final{
+        background-color: brown;
+        width:20vw;
+        border-radius: 1vw;
+    }
