@@ -1,0 +1,101 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Comforter', cursive;
+    }
+body{
+    /* background-color: rgb(189, 231, 231); */
+    background-image: url("https://i2.wp.com/ghostbrothers.com/wp-content/uploads/2019/07/14671-e1563848138906.jpg?fit=1024%2C697&ssl=1");
+    background-repeat:round;
+    background-size:cover;
+    
+}
+#container {
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#heading{
+    background-color: black;
+    color:white;
+    width:25vw;
+    text-align: center;
+    border-radius:10px 10px 0 0;
+    padding:0.3rem;
+    text-transform: uppercase;
+}
+#contant{
+    width:25vw;
+    background-color: white;
+    border-radius:0 0 10px 10px;
+    box-shadow: 1px 2px black;
+}
+#contant ul li{
+    margin:2rem 5rem;
+    list-style: none;
+}
+#service{
+    height: 3rem;
+    width:12rem;
+    font-size: 20px;
+    padding:0.5rem;
+}
+#calculate{
+    /* display:inline-block; */
+    margin:3% 25% 3% 25%;
+    background-color: black;
+    width:10rem; 
+     height: 2rem;
+    border-radius: 5px;
+    color:white;
+    font-size:1.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#calculate:focus{
+    background-color: white;
+    color:black;
+}
+.showclass{
+    width:25vw;
+    height:auto;
+    margin-bottom: 2rem;
+    padding:1rem;
+    text-align: center;
+    font-size:30px;
+    color:red;
+}
+@media(min-width:0px) and (max-width:850px){
+    #heading{
+        width:100%;
+    }
+    #contant{
+        width: 100%;
+    }
+    #contant ul{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .showclass{
+        width:50%;
+        text-align: center;
+    }
+}
+@media (min-width:851px) and (max-width:1300px){
+    #contant{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .showclass{
+        width:100%;
+        text-align: center;
+    }
+}
