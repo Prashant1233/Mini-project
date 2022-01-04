@@ -10,27 +10,23 @@ body{
     background-size: cover;
 }
 .main-div {
-    height:100vh;
     width:100vw;
-    }
-.front-end {
-    height:80px;
-    width:100vw;
-    background-color: rgba(11, 44, 75, 0.795);
-    display:flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    flex-direction: column;
+    }
+.front-end {
+    width:100vw;
+    background-color: rgba(11, 44, 75, 0.795);
+    font-size: 1.875rem;
     color:white;
+    text-align: center;
 }
 #container {
     height:60vh;
     width:40vw;
-    align-items:center;
-    justify-content: center;
-    flex-flow: column;
     background-color: rgba(255, 255, 255, 0.582);
-    margin:50px 420px;
+    margin:3.125rem 26.25rem;
     border-radius: 1vw;
 }
 .heading {
@@ -38,14 +34,12 @@ body{
     color:rgba(11, 44, 75, 0.966);
     margin-top:30px;
     width:40vw;
-    padding:15px;
+    padding:0.938rem;
     border-radius:1vw;
     cursor:default;
 }
 .question ul {
     list-style: none;
-    flex-flow: column;
-    margin-bottom: 1rem rem;
 }
 .question ul li{
     font-size: 1.5rem;
@@ -57,18 +51,16 @@ input{
     cursor: pointer;
 }
 .btn {
-    position:relative;
+    display: block;
     width:40vw;
     height:10vh;
     background-color:rgb(29, 29, 29);
     font-size: 1.5rem;
-    margin-top:30px;
     color:yellow;
     cursor:pointer;
     border: 1px solid rgba(0, 0, 0, 0.24);
 }
 button:hover {
-    /* background-color:white; */
     color:white;
 }
 button:focus {
@@ -78,7 +70,7 @@ button:focus {
 .show {
     display:flex;
     justify-content: center;
-    margin-top: 200px;  
+    margin-top: 12.5rem;  
     text-align: center;
     }
 .showscore {
@@ -100,5 +92,21 @@ button:focus {
         background-color: brown;
         width:20vw;
         border-radius: 1vw;
-        box-shadow: 1px 1px 1px 1px white;
     }
+     input[type=radio]{
+        width:20px; 
+        height:20px;
+    }
+  @media(max-width:650px){
+  #container{
+    height:80vh;
+    width:100vw;
+}
+.question ul li{
+    width:100vw;
+}
+.btn {
+    width:100vw;
+}
+    }
+
