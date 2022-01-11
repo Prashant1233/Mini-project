@@ -15,10 +15,11 @@
         <ul>
             <li>
                 <label for="tip">How much was the Bill?</label></br>
-                <input id="tip" type="number" min="1"></li>
+                <input id="tip" type="number" min="0" placeholder="Rs."></li>
             <li>
                 <label for="service">How was the service?</label></br>
                 <select name="service" id="service">
+                    <option disabled selected value="">Select from here</option>
                     <option value="0">Poor 0%</option>
                     <option value="10">Good 10%</option>
                     <option value="20">Better 20%</option>
@@ -27,7 +28,7 @@
             </li>
             <li>
                 <label for="total_person">How many people are sharing the bill?</label></br>
-                <input id="total_person" type="number" min="1"></li>
+                <input id="total_person" type="number" min="1" placeholder="0"></li>
                 <button id="calculate" type="submit" onclick="calculation()">Calculate</button>
         <div id="show"></div>
 
